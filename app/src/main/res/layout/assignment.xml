@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/assignmentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/assignmentName"
+            android:layout_width="162dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:gravity="left"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:text="Name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/assignmentGrade"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_toEndOf="@id/assignmentName"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:text="Grade"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/assignmentRemove"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/assignmentGrade"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:text="Remove"
+            />
+
+    </RelativeLayout>
+</LinearLayout>
